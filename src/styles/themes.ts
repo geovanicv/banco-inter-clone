@@ -1,7 +1,7 @@
 export default {
   colors: {
     primary: '#FF8700',
-    secundary: '#FF500F',
+    secondary: '#FF500F',
     grey: '#8C91A5',
     lightGrey: '#F5F6FA',
     darkGrey: '#6C7570',
@@ -21,10 +21,10 @@ export default {
     defaul: '1.6rem',
     vertical: '1.6rem 0',
     horizontal: '0 1.6rem',
-    large: '2.4rem'
+    large: '2.4rem',
   },
 
   transition: {
-    default: '180ms ease-in-out'
-  }
-}
+    default: '180ms ease-in-out',
+  },
+};

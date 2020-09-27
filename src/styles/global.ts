@@ -14,8 +14,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${({theme}) => theme.colors.background};
-    color: ${({theme}) => theme.colors.grey};
+    background: ${({ theme }) => theme.colors.lightGrey};
+    color: ${({ theme }) => theme.colors.grey};
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility !important;
     -moz-osx-font-smoothing: grayscale;
@@ -52,10 +52,11 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-    /* border: 0;
+    border: 0;
+
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
   }
 
   ul {
