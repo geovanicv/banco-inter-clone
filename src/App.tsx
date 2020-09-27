@@ -1,5 +1,7 @@
 import React from 'react';
-import {ThemeProvider} from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import Gradient from './components/Gradient';
+import Header from './components/Header';
 
 import GlobalStyles from './styles/global';
 import theme from './styles/themes';
@@ -9,8 +11,9 @@ import theme from './styles/themes';
 const App: React.FC = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
-    <h1>Hello</h1>
+    <Header />
+    <Gradient />
   </ThemeProvider>
-)
+);
 
 export default App;
