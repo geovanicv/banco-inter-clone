@@ -2,6 +2,7 @@ import React from 'react';
 import { BancoInter } from '../../assets/images';
 import Button from '../Button';
 import AccountDropDown from './AccountDropDown';
+import Gradient from '../Gradient';
 
 import { Container, Wrapper, LeftNav, RightNav } from './styles';
 
@@ -18,6 +19,7 @@ const Header: React.FC = () => {
           <AccountDropDown name="Geovani Cavalcante" />
         </RightNav>
       </Wrapper>
+      <Gradient />
     </Container>
   );
 };
