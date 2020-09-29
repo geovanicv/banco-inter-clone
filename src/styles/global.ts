@@ -24,8 +24,8 @@ export default createGlobalStyle`
   body, #root {
     min-height: 100vh;
     position: relative;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
   }
 
   /* #root {
