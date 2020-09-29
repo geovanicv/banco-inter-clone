@@ -6,9 +6,4 @@
 // export { ReactComponent as SmartphoneIcon } from './smartphone.svg';
 // export { ReactComponent as TicketIcon } from './ticket.svg';
 
-export { ReactComponent as BarChartIcon } from './side-bar-bar-chart.svg';
-export { ReactComponent as DollarIcon } from './side-bar-dollar-sign.svg';
-export { ReactComponent as PieIcon } from './side-bar-piechart.svg';
-export { ReactComponent as ShieldIcon } from './side-bar-shield.svg';
-export { ReactComponent as BarSmartphoneIcon } from './side-bar-smartphone.svg';
-export { ReactComponent as UmbrellaIcon } from './side-bar-umbrella.svg';
+export { ReactComponent as HashCodeICon } from './hash-code.svg';
