@@ -1,10 +1,18 @@
 import styled, { css } from 'styled-components';
 import Button from '../../../components/Button';
 
+export const Wrapper = styled.div`
+  ${({ theme }) => css`
+    max-width: 26.4rem;
+    display: flex;
+    flex: 1 100%;
+    flex-direction: column;
+  `}
+`;
+
 export const Container = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.background};
-    max-width: 26.4rem;
     max-height: 60rem;
     width: 100%;
     height: 100%;
