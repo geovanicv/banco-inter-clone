@@ -13,11 +13,11 @@ const variants = {
 };
 
 export const Container = styled.button<IButtonProps>`
-  ${({ theme, variant }) => css`
+  ${({ theme, variant, color, background }) => css`
     padding: 0.8rem 2.4rem;
     border-radius: 0.4rem;
-    color: ${theme.colors.secondary};
-    background: ${theme.colors.background};
+    color: ${color || theme.colors.secondary};
+    background: ${background || theme.colors.background};
     transition: ${theme.transition.default};
 
     * {

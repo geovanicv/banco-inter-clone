@@ -6,6 +6,8 @@ export type ButtonVariants = 'secondary' | 'transparent';
 
 export type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariants;
+  background?: string;
+  color?: string;
 };
 
 const Button: React.FC<IButtonProps> = ({
