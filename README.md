@@ -1,8 +1,13 @@
+<p align="center" >
+  <img src="./src/assets/images/logo.svg" alt="Interface's gif" width="200" />
+</p>
+
+<br />
+
 # :bank: Banco Inter Redesign
 Hi! This is a Inter bank's redesign and it's currently under development.
 
 I'm using this project to improve my git knowledge, creating a real project flow with git flow.
-
 
 # :rocket: Technologies
 This project was developed based at @lukemorales lives on twitch with the following technologies:
