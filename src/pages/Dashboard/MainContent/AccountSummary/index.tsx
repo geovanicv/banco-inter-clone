@@ -10,6 +10,7 @@ import {
 
 import Button from '../../../../components/Button';
 import CreditCardIllustration from '../../../../assets/images/illustrations/card-illustration.png';
+import { DEFAULT_TRANSITION } from '../../../../constants';
 
 import {
   Container,
@@ -21,13 +22,36 @@ import {
   DataValue,
 } from './styles';
 
+const containerAnimation = {
+  unMounted: { y: -50, opacity: 0 },
+  mounted: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      when: 'beforeChildren',
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const cardsAnimation = {
+  unMounted: { y: -25, opacity: 0 },
+  mounted: { y: 0, opacity: 1 },
+};
+
 const AccountSummary: React.FC = () => {
   const [displayStatement, setDisplayStatement] = useState(true);
   const [displayInvestments, setDisplayInvestments] = useState(true);
 
   return (
-    <Container>
-      <Card>
+    <Container variants={containerAnimation}>
+      <Card
+        layout
+        key="statement"
+        variants={cardsAnimation}
+        transition={DEFAULT_TRANSITION}
+      >
         <Header>
           <FiFileText />
           <span>Extrato</span>
@@ -53,7 +77,12 @@ const AccountSummary: React.FC = () => {
         </DataWrapper>
       </Card>
 
-      <Card>
+      <Card
+        layout
+        key="credit-card"
+        variants={cardsAnimation}
+        transition={DEFAULT_TRANSITION}
+      >
         <Header>
           <FiCreditCard />
           <span>Mastercard 8430 </span>
@@ -68,7 +97,12 @@ const AccountSummary: React.FC = () => {
         </DataWrapper>
       </Card>
 
-      <Card>
+      <Card
+        layout
+        key="credit-card"
+        variants={cardsAnimation}
+        transition={DEFAULT_TRANSITION}
+      >
         <Header>
           <FiShield />
           <span>Plataforma Aberta Inter</span>

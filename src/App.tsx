@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { AnimatePresence } from 'framer-motion';
 
 import GlobalStyles from './styles/global';
 import theme from './styles/themes';
@@ -11,7 +12,9 @@ import Dashboard from './pages/Dashboard';
 const App: React.FC = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
-    <Dashboard />
+    <AnimatePresence exitBeforeEnter>
+      <Dashboard />
+    </AnimatePresence>
   </ThemeProvider>
 );
 
