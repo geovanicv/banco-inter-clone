@@ -8,9 +8,9 @@ I'm using this project to improve my git knowledge, creating a real project flow
 This project was developed based at @lukemorales lives on twitch with the following technologies:
 
 - ReactJS
-	> Typescript
-	> styled-components
-	> Eslint and Prettier
+- Typescript
+- styled-components
+- Eslint and Prettier
 
 
 ---
