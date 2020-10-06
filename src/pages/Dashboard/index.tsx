@@ -5,12 +5,28 @@ import MainContent from './MainContent';
 import SideBar from './SideBar';
 import { Container, Wrapper } from './styles';
 
+const animation = {
+  unMounted: { opacity: 0 },
+  mounted: {
+    opacity: 1,
+    // transition: {
+    //   when: 'beforeChildren',
+    //   staggerChildren: 0.2,
+    // },
+  },
+};
+
 const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
       <Container>
-        <Wrapper>
+        <Wrapper
+          variants={animation}
+          initial="unMounted"
+          animate="mounted"
+          transition={{ duration: 1 }}
+        >
           <SideBar />
           <MainContent />
         </Wrapper>
