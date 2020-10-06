@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.header`
   background: ${({ theme }) => theme.colors.background};
@@ -10,7 +11,7 @@ export const Container = styled.header`
   align-items: center;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   max-width: 113rem;
   height: 10.4rem;
   width: 100%;
@@ -18,7 +19,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const LeftNav = styled.div`
+export const LeftNav = styled(motion.div)`
   font-size: ${({ theme }) => theme.fontSizes.large};
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@ export const LeftNav = styled.div`
   }
 `;
 
-export const RightNav = styled.div`
+export const RightNav = styled(motion.div)`
   display: flex;
   justify-content: flex-end;
   align-items: center;
