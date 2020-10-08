@@ -10,7 +10,7 @@ const HelpDesk: React.FC = () => {
     <Container>
       <img src={BabiHelpDesk} alt="Eu sou a Babi do Banco Inter" />
       <span>
-        Olá, Luke. <br /> Posso Ajudar?
+        Olá, Geovani. <br /> Posso Ajudar?
       </span>
       <HelpButton>
         <FiArrowRight size={24} />
