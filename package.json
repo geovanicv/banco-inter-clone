@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nivo/bar": "^0.62.0",
     "@nivo/line": "^0.62.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,6 +13,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "customize-cra": "^1.0.0",
+    "framer-motion": "^2.7.7",
     "polished": "^3.6.7",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
@@ -19,8 +21,7 @@
     "react-icons": "^3.11.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.0",
-    "typescript": "~3.7.2",
-    "framer-motion": "^2.7.7"
+    "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -53,7 +54,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4",
-
     "prettier": "^2.1.2",
     "react-refresh": "^0.8.3"
   }
