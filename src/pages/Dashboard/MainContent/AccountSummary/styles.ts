@@ -61,7 +61,7 @@ export const DataWrapper = styled.div`
 export const LeftData = styled.div`
   margin-right: 0.8rem;
   max-width: 55%;
-  max-height: 11.2rem;
+  max-height: 9.6rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -71,6 +71,12 @@ export const LeftData = styled.div`
   > img {
     height: 8.4rem;
     width: auto;
+  }
+
+  svg text {
+    font-family: inherit !important;
+    font-size: ${({ theme }) => theme.fontSizes.tiny} !important;
+    fill: ${({ theme }) => theme.colors.grey} !important;
   }
 `;
 
@@ -99,5 +105,33 @@ export const DataValue = styled.div<{ green?: boolean; red?: boolean }>`
     }};
 
     font-size: ${theme.fontSizes.default};
+  `}
+`;
+
+export const CustomTooltip = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.lightGrey};
+    padding: 0.4rem 0.8rem;
+    border-radius: ${theme.radius.small};
+    font-size: ${theme.fontSizes.tiny};
+    text-align: center;
+    box-shadow: 0 -0.1rem 0.2rem rgba(0, 0, 0, 0.28);
+    :before {
+      content: '';
+      display: block;
+      height: 0;
+      left: 50%;
+      bottom: -50%;
+      position: absolute;
+      transform: translate3d(-50%, 25%, 0);
+      border-color: ${theme.colors.lightGrey} transparent transparent
+        transparent;
+      border-style: solid;
+      border-width: 0.8rem;
+    }
+    :after {
+      content: '';
+      display: block;
+    }
   `}
 `;
