@@ -30,12 +30,12 @@ const navsAnimation = {
 
 const Header: React.FC = () => {
   return (
-    <Container>
-      <Wrapper
-        variants={containerAnimation}
-        initial="unMounted"
-        animate="mounted"
-      >
+    <Container
+      variants={containerAnimation}
+      initial="unMounted"
+      animate="mounted"
+    >
+      <Wrapper>
         <LeftNav variants={navsAnimation}>
           <BancoInter />
           Internet Banking

@@ -23,6 +23,7 @@ export default createGlobalStyle`
 
   body, #root {
     min-height: 100vh;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;

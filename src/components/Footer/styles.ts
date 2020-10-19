@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components';
 import { transparentize } from 'polished';
+import { motion } from 'framer-motion';
 
 import { Wrapper as HeaderWrapper } from '../Header/styles';
 
-export const Container = styled.footer`
+export const Container = styled(motion.footer)`
   ${() => css`
     margin-top: 3.4rem;
     display: flex;
@@ -11,6 +12,7 @@ export const Container = styled.footer`
     justify-content: center;
     align-items: center;
     width: 100%;
+    transform-origin: bottom;
   `}
 `;
 
