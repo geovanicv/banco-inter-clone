@@ -25,5 +25,10 @@ export const Container = styled.button<IButtonProps>`
     }
 
     ${variant && variants[variant]}
+
+    :disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
   `};
 `;

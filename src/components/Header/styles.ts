@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const Container = styled.header`
+export const Container = styled(motion.header)`
   background: ${({ theme }) => theme.colors.background};
 
   width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.header`
   align-items: center;
 `;
 
-export const Wrapper = styled(motion.div)`
+export const Wrapper = styled.div`
   max-width: 113rem;
   height: 10.4rem;
   width: 100%;

@@ -6,6 +6,7 @@ import AccountDropDown from './AccountDropDown';
 import { DEFAULT_TRANSITION } from '../../constants';
 
 import { Container, Wrapper, LeftNav, RightNav } from './styles';
+import { useAuth } from '../../hooks/auth';
 
 const containerAnimation = {
   unMounted: {},
@@ -29,20 +30,22 @@ const navsAnimation = {
 };
 
 const Header: React.FC = () => {
+  const { name } = useAuth();
+
   return (
-    <Container>
-      <Wrapper
-        variants={containerAnimation}
-        initial="unMounted"
-        animate="mounted"
-      >
+    <Container
+      variants={containerAnimation}
+      initial="unMounted"
+      animate="mounted"
+    >
+      <Wrapper>
         <LeftNav variants={navsAnimation}>
           <BancoInter />
           Internet Banking
         </LeftNav>
         <RightNav variants={navsAnimation}>
           <Button variant="secondary">Simulador Renda Fixa</Button>
-          <AccountDropDown name="Geovani Cavalcante" />
+          <AccountDropDown name={name} />
         </RightNav>
       </Wrapper>
       <Gradient />
