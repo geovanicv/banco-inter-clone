@@ -7,15 +7,17 @@ import theme from './styles/themes';
 
 import Dashboard from './pages/Dashboard';
 
-// import { Container } from './styles';
+import { AuthProvider } from './hooks/auth';
 
 const App: React.FC = () => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <AnimatePresence exitBeforeEnter>
-      <Dashboard />
-    </AnimatePresence>
-  </ThemeProvider>
+  <AuthProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <AnimatePresence exitBeforeEnter>
+        <Dashboard />
+      </AnimatePresence>
+    </ThemeProvider>
+  </AuthProvider>
 );
 
 export default App;
