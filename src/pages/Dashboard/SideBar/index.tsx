@@ -5,8 +5,11 @@ import sideBarNavigation from '../../../resources/sideBarNavigation';
 import { Wrapper, AmountInvested, Container } from './styles';
 import AccountBalance from './AccountBalance';
 import HelpDesk from './HelpDesk';
+import { useAuth } from '../../../hooks/auth';
 
 const SideBar: React.FC = () => {
+  const { name } = useAuth();
+
   return (
     <Wrapper>
       <Container>
@@ -18,7 +21,7 @@ const SideBar: React.FC = () => {
           <DropDown key={key} icon={value.icon} sectionName={key} />
         ))}
       </Container>
-      <HelpDesk />
+      <HelpDesk name={name} />
     </Wrapper>
   );
 };
